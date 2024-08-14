@@ -1,0 +1,32 @@
+.piece {
+  padding: 20px 0;
+}
+
+.piece img{
+  width: 250px;
+  height: auto;
+  padding-right: 20px;
+}
+
+.piece .thumb:hover {
+  scale: 1.02;
+}
+
+.piece div{
+  display: flex;
+  padding: 10px 0;
+}
+
+dialog {
+  background-color: rgba(0, 0, 0, 0.39);
+  height: 100%;
+  width: 100%;
+}
+
+dialog img {
+  width: auto;
+  max-height: 90%;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}

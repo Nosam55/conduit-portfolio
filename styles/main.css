@@ -1,0 +1,122 @@
+@property --not-black {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #222;
+}
+
+@property --main-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #636669;
+}
+
+@property --main-light {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #A0AAAF;
+}
+
+@property --main-dark {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #40444F;
+}
+
+@property --alt-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #444;
+}
+
+@property --alt-light {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #555;
+}
+
+@property --alt-dark {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #333;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  color: var(--not-black);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+a {
+  color: var(--main-light);
+  text-decoration-line: none;
+}
+
+a:visited {
+  color: var(--main-dark);
+}
+
+a:hover {
+  text-decoration-line: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid var(--alt-dark);
+  border-bottom: 1px solid var(--alt-dark);
+}
+
+nav a {
+  color: var(--not-black);
+  text-decoration-line: none;
+  padding: 8px;
+  margin: auto 16px;
+}
+
+nav a:visited {
+  color: var(--not-black);
+}
+
+nav a:hover, .nav-current {
+  border: 2px outset var(--alt-light);
+  padding: 6px;
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--alt-color);
+  height: 15%;
+  padding-bottom: 15px;
+}
+
+main {
+  background-color: var(--main-color);
+  min-height: calc(75% - 15px);
+}
+
+footer {
+  background-color: var(--alt-color);
+  height: 10%;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+#map {
+  width: 45%;
+  padding: 15px 0 5px 0;
+}

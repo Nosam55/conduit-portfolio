@@ -1,0 +1,13 @@
+.contact-info {
+  list-style: none;
+}
+
+.contact-info li img {
+  position: relative;
+  top: 8px;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+}
